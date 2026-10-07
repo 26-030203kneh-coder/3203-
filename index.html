@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공룡 달리기 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-wrapper">
+    <div class="title">🦖 DINO RUN</div>
+
+    <div class="score-board">
+        <span>점수: <b id="score">00000</b></span>
+        <span>최고점수: <b id="highScore">00000</b></span>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="gameCanvas" width="900" height="300"></canvas>
+
+        <div id="startScreen" class="screen">
+            <div class="big-text">🦖 DINO RUN</div>
+            <p>스페이스바 또는 화면을 클릭해서 점프!</p>
+            <button id="startButton">게임 시작</button>
+        </div>
+
+        <div id="gameOverScreen" class="screen hidden">
+            <div class="big-text">GAME OVER</div>
+            <p>점수: <span id="finalScore">0</span></p>
+            <button id="restartButton">다시 하기</button>
+        </div>
+    </div>
+
+    <div class="help">
+        SPACE / ↑ / 클릭 = 점프
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
